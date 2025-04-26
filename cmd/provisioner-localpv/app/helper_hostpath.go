@@ -9,16 +9,16 @@ import (
 	"strings"
 	"time"
 
-	hostpath "github.com/openebs/maya/pkg/hostpath/v1alpha1"
+	hostpath "github.com/aamir-tiwari-sumo/maya/pkg/hostpath/v1alpha1"
 	errors "github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	k8serror "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/v2"
 
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/pod"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/pod"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
 )
 
 type podConfig struct {

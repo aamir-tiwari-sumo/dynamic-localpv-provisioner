@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	menv "github.com/openebs/maya/pkg/env/v1alpha1"
+	menv "github.com/aamir-tiwari-sumo/maya/pkg/env/v1alpha1"
 )
 
 func TestGetOpenEBSNamespace(t *testing.T) {

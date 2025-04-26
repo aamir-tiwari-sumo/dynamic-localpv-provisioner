@@ -10,12 +10,12 @@ import (
 	storagev1 "k8s.io/api/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	deploy "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/apps/v1/deployment"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
-	pvc "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolumeclaim"
-	pts "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
-	sc "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
+	deploy "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/apps/v1/deployment"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
+	pvc "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolumeclaim"
+	pts "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
+	sc "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
 )
 
 var _ = Describe("TEST HOSTPATH LOCAL PV", func() {

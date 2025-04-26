@@ -10,7 +10,7 @@ import (
 	storagev1 "k8s.io/api/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	sc "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
+	sc "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
 )
 
 var _ = Describe("TEST HOSTPATH XFS QUOTA LOCAL PV WITH UNSUPPORTED FILESYSTEM", func() {

@@ -4,16 +4,16 @@ import (
 	ctx "context"
 	"time"
 
+	mayav1alpha1 "github.com/aamir-tiwari-sumo/maya/pkg/apis/openebs.io/v1alpha1"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	mayav1alpha1 "github.com/openebs/maya/pkg/apis/openebs.io/v1alpha1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/yaml"
 
-	pvc "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolumeclaim"
-	sc "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
+	pvc "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolumeclaim"
+	sc "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/storage/v1/storageclass"
 )
 
 var _ = Describe("VOLUME PROVISIONING/DE-PROVISIONING WITH ADDITIVE CAS-CONFIGS ON PVC AND SC", func() {
@@ -63,7 +63,7 @@ var _ = Describe("VOLUME PROVISIONING/DE-PROVISIONING WITH ADDITIVE CAS-CONFIGS 
 				pvcCasConfig := []mayav1alpha1.Config{
 					{
 						Name: "NodeAffinityLabels", // This is the config that needs to not be for the same config key name.
-						List: pvcNodeAffinityLabelKeys,
+
 					},
 				}
 				pvcCasConfigStr, err := yaml.Marshal(pvcCasConfig)
@@ -206,11 +206,10 @@ var _ = Describe("VOLUME PROVISIONING/DE-PROVISIONING WITH CONFLICTING CAS-CONFI
 				scName = storageClass.Name
 			})
 			By("creating the PVC with the same cas-config key, but a different value", func() {
-				pvcNodeAffinityLabelKeys := []string{"kubernetes.io/os", "kubernetes.io/arch"}
 				pvcCasConfig := []mayav1alpha1.Config{
 					{
 						Name: "NodeAffinityLabels", // This is the config that needs to not be for the same config key name.
-						List: pvcNodeAffinityLabelKeys,
+
 					},
 				}
 				pvcCasConfigStr, err := yaml.Marshal(pvcCasConfig)

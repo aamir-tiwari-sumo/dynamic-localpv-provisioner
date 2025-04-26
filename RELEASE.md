@@ -72,7 +72,7 @@ The helm charts are hosted on github deployments for the corresponding releases.
 ## Release Artifacts
 
 - **Container Images:** Published at [Docker Hub](https://hub.docker.com/r/openebs/provisioner-localpv/tags)
-- **Helm Charts:** Hosted on [GitHub Deployments](https://github.com/openebs/dynamic-localpv-provisioner/tree/gh-pages)
+- **Helm Charts:** Hosted on [GitHub Deployments](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/tree/gh-pages)
 
 Before finalizing a release or patch release, it is ensured that **all significant changes** are documented in `CHANGELOG.md`.
 

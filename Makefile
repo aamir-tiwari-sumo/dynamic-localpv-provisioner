@@ -74,7 +74,7 @@ DBUILD_DATE=$(shell date -u +'%Y-%m-%dT%H:%M:%SZ')
 
 # Specify the docker arg for repository url
 ifeq (${DBUILD_REPO_URL}, )
-  DBUILD_REPO_URL="https://github.com/openebs/dynamic-localpv-provisioner"
+  DBUILD_REPO_URL="https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner"
   export DBUILD_REPO_URL
 endif
 

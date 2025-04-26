@@ -26,7 +26,7 @@ curl -L https://nixos.org/nix/install | sh
 
 ### Fork in the cloud
 
-1. Visit <https://github.com/openebs/dynamic-localpv-provisioner>
+1. Visit <https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner>
 2. Click `Fork` button (top right) to establish a cloud-based fork.
 
 ### Clone fork to local host
@@ -39,7 +39,7 @@ $ cd ~/git
 # $user is your github user
 $ git clone https://github.com/$user/dynamic-localpv-provisioner.git # you may use ssh instead
 $ cd dynamic-localpv-provisioner
-$ git remote add upstream https://github.com/openebs/dynamic-localpv-provisioner.git
+$ git remote add upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.git
 # Don't push to upstream directly
 $ git remote set-url --push upstream no_push
 ```
@@ -64,14 +64,14 @@ Make sure you have the upstream remote openebs/dynamic-localpv-provisioner by li
 $ git remote -v
 origin https://github.com/$user/dynamic-localpv-provisioner.git (fetch)
 origin https://github.com/$user/dynamic-localpv-provisioner.git (push)
-upstream https://github.com/openebs/dynamic-localpv-provisioner.git (fetch)
-upstream https://github.com/openebs/dynamic-localpv-provisioner.git (no_push)
+upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.git (fetch)
+upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.git (no_push)
 ```
 
 If the upstream is missing, add it by using below command.
 
 ```sh
-git remote add upstream https://github.com/openebs/dynamic-localpv-provisioner.git
+git remote add upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.git
 ```
 
 Fetch all the changes from the upstream develop branch.
@@ -186,9 +186,9 @@ Simple unit testing can be done via make:
 $ make test
 --> Running go fmt
 --> Running go test
-?       github.com/openebs/dynamic-localpv-provisioner/cmd      [no test files]
-ok      github.com/openebs/dynamic-localpv-provisioner/pkg/driver       0.011s  coverage: 0.5% of statements
-?       github.com/openebs/dynamic-localpv-provisioner/pkg/equality     [no test files]
+?       github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/cmd      [no test files]
+ok      github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/driver       0.011s  coverage: 0.5% of statements
+?       github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/equality     [no test files]
 ...
 ```
 
@@ -303,7 +303,7 @@ Before you raise the Pull Requests, ensure you have reviewed the checklist in th
 * Ensure that you have added the required unit tests for the bug fixes or new feature that you have introduced.
 * Ensure your commits history is clean with proper header and descriptions.
 
-Go to the [openebs/dynamic-localpv-provisioner github](https://github.com/openebs/dynamic-localpv-provisioner) and follow the Open Pull Request link to raise your PR from your development branch.
+Go to the [openebs/dynamic-localpv-provisioner github](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner) and follow the Open Pull Request link to raise your PR from your development branch.
 
 [nix]: https://nixos.org/
 [nix-install]: https://nixos.org/download.html

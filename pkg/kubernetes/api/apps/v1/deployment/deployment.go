@@ -1,12 +1,12 @@
 package v1alpha1
 
 import (
-	stringer "github.com/openebs/maya/pkg/apis/stringer/v1alpha1"
+	stringer "github.com/aamir-tiwari-sumo/maya/pkg/apis/stringer/v1alpha1"
 	"github.com/pkg/errors"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	templatespec "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
+	templatespec "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
 )
 
 // Predicate abstracts conditional logic w.r.t the deployment instance

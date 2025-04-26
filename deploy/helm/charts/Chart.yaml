@@ -15,4 +15,4 @@ keywords:
   - local
   - dynamic-localpv
 sources:
-  - https://github.com/openebs/dynamic-localpv-provisioner
+  - https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner

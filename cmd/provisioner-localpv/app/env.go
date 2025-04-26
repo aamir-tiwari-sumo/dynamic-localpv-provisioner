@@ -1,7 +1,7 @@
 package app
 
 import (
-	menv "github.com/openebs/maya/pkg/env/v1alpha1"
+	menv "github.com/aamir-tiwari-sumo/maya/pkg/env/v1alpha1"
 	k8sEnv "k8s.io/utils/env"
 )
 

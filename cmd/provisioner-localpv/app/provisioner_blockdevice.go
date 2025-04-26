@@ -19,15 +19,15 @@ package app
 import (
 	"context"
 
-	"github.com/openebs/maya/pkg/alertlog"
+	"github.com/aamir-tiwari-sumo/maya/pkg/alertlog"
 	"github.com/pkg/errors"
 	"k8s.io/klog/v2"
 
-	mconfig "github.com/openebs/maya/pkg/apis/openebs.io/v1alpha1"
+	mconfig "github.com/aamir-tiwari-sumo/maya/pkg/apis/openebs.io/v1alpha1"
 	v1 "k8s.io/api/core/v1"
-	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v9/controller"
+	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v10/controller"
 
-	pv "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolume"
+	pv "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/persistentvolume"
 )
 
 // ProvisionBlockDevice is invoked by the Provisioner to create a Local PV

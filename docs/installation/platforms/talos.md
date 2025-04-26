@@ -34,4 +34,4 @@ metadata:
 
 Caution: When using local storage on Talos, you must remember to pass the `--preserve` argument when running `talosctl upgrade` to avoid host paths getting wiped out during the upgrade (as noted in [Talos Local Storage documentation](https://www.talos.dev/v1.2/kubernetes-guides/configuration/replicated-local-storage-with-openebs-jiva/)).
 
-After adding the required configuration, proceed with installation as described in [the quickstart](https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).
+After adding the required configuration, proceed with installation as described in [the quickstart](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).

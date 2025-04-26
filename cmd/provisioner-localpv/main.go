@@ -23,8 +23,8 @@ import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog/v2"
 
-	"github.com/openebs/dynamic-localpv-provisioner/cmd/provisioner-localpv/app"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/logger"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/cmd/provisioner-localpv/app"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/logger"
 )
 
 func init() {

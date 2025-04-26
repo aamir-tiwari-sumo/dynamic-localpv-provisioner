@@ -4,7 +4,7 @@
 [![LICENSE](https://img.shields.io/github/license/openebs/openebs.svg)](./LICENSE)
 [![Slack](https://img.shields.io/badge/chat-slack-ff1493.svg?style=flat-square)](https://kubernetes.slack.com/messages/openebs)
 [![Community Meetings](https://img.shields.io/badge/Community-Meetings-blue)](https://us05web.zoom.us/j/87535654586?pwd=CigbXigJPn38USc6Vuzt7qSVFoO79X.1)
-[![Go Report Card](https://goreportcard.com/badge/github.com/openebs/dynamic-localpv-provisioner)](https://goreportcard.com/report/github.com/openebs/dynamic-localpv-provisioner)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner)](https://goreportcard.com/report/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner)
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B162%2Fgithub.com%2Fopenebs%2Fdynamic-localpv-provisioner.svg?type=shield&issueType=license)](https://app.fossa.com/projects/custom%2B162%2Fgithub.com%2Fopenebs%2Fdynamic-localpv-provisioner?ref=badge_shield&issueType=license)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9666/badge)](https://www.bestpractices.dev/projects/9666)
 [![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/openebs/badge)](https://clomonitor.io/projects/cncf/openebs)

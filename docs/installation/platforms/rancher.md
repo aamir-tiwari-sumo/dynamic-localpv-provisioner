@@ -18,4 +18,4 @@ services:
 
 For more information, please go through the official Rancher documentaion -- [RKE - Kubernetes Configuration Options](https://rancher.com/docs/rke/latest/en/config-options/services/services-extras/#extra-binds), [RKE - Installation](https://rancher.com/docs/rke/latest/en/installation/#deploying-kubernetes-with-rke).
 
-After adding the `extra_binds` are added, proceed with installation as described in [the quickstart](https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).
+After adding the `extra_binds` are added, proceed with installation as described in [the quickstart](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).

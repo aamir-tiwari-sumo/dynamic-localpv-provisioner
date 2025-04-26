@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"strings"
 
-	mconfig "github.com/openebs/maya/pkg/apis/openebs.io/v1alpha1"
-	cast "github.com/openebs/maya/pkg/castemplate/v1alpha1"
-	hostpath "github.com/openebs/maya/pkg/hostpath/v1alpha1"
-	"github.com/openebs/maya/pkg/util"
+	mconfig "github.com/aamir-tiwari-sumo/maya/pkg/apis/openebs.io/v1alpha1"
+	cast "github.com/aamir-tiwari-sumo/maya/pkg/castemplate/v1alpha1"
+	hostpath "github.com/aamir-tiwari-sumo/maya/pkg/hostpath/v1alpha1"
+	"github.com/aamir-tiwari-sumo/maya/pkg/util"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -490,14 +490,10 @@ func listConfigToMap(pvConfig []mconfig.Config) (map[string]interface{}, error) 
 	m := map[string]interface{}{}
 
 	for _, configObj := range pvConfig {
-		//No List Parameter
-		if len(configObj.List) == 0 {
-			continue
-		}
 
 		configName := strings.TrimSpace(configObj.Name)
 		confHierarchy := map[string]interface{}{
-			configName: configObj.List,
+			configName: configName,
 		}
 		isMerged := util.MergeMapOfObjects(m, confHierarchy)
 		if !isMerged {

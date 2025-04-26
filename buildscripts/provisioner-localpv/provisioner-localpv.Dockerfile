@@ -30,7 +30,7 @@ ENV GO111MODULE=on \
   BRANCH=${BRANCH} \
   RELEASE_TAG=${RELEASE_TAG}
 
-WORKDIR /go/src/github.com/openebs/dynamic-localpv-provisioner/
+WORKDIR /go/src/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/
 
 RUN apt-get update && apt-get install -y make git
 
@@ -54,14 +54,17 @@ LABEL org.label-schema.build-date=$DBUILD_DATE
 LABEL org.label-schema.vcs-url=$DBUILD_REPO_URL
 LABEL org.label-schema.url=$DBUILD_SITE_URL
 
-RUN apk add --no-cache \
-    iproute2 \
-    bash \
-    curl \
-    net-tools \
-    procps \
-    ca-certificates
+RUN apk update && apk upgrade && \
+    apk add --no-cache \
+        iproute2 \
+        bash \
+        curl \
+        net-tools \
+        procps \
+        ca-certificates
 
-COPY --from=build /go/src/github.com/openebs/dynamic-localpv-provisioner/bin/provisioner-localpv/provisioner-localpv /usr/local/bin/provisioner-localpv
+FROM alpine:3.20
+
+COPY --from=build /go/src/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/bin/provisioner-localpv/provisioner-localpv /usr/local/bin/provisioner-localpv
 
 ENTRYPOINT ["/usr/local/bin/provisioner-localpv"]

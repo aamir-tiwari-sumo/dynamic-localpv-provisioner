@@ -14,4 +14,4 @@ minikube start --driver=none
 
 For more information on using the 'none' driver flag argument, [read the official minikube docs](https://minikube.sigs.k8s.io/docs/drivers/none/).
 
-After minikube is started with no VM driver, proceed with installation as described in [the quickstart](https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).
+After minikube is started with no VM driver, proceed with installation as described in [the quickstart](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).

@@ -10,7 +10,7 @@ This containerization also helps to integrate e2e-tests into CI/CD environments.
 e2e-tests experiment jobs run using a dedicated ServiceAccount in the e2e namespace. So first of all clone this repository and head to `e2e-tests/hack` folder to setup RBAC & custom resource definitions (CRDs) via kubectl, as shown below: 
 
 ```
-git clone https://github.com/openebs/dynamic-localpv-provisioner.git
+git clone https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.git
 cd dynamic-localpv-provisioner/e2e-tests
 kubectl apply -f hack/rbac.yaml
 kubectl apply -f hack/crds.yaml  

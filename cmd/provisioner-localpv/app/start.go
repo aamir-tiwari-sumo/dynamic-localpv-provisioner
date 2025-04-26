@@ -5,15 +5,15 @@ import (
 	"os"
 	"strings"
 
+	menv "github.com/aamir-tiwari-sumo/maya/pkg/env/v1alpha1"
+	mKube "github.com/aamir-tiwari-sumo/maya/pkg/kubernetes/client/v1alpha1"
+	"github.com/aamir-tiwari-sumo/maya/pkg/util"
+	"github.com/aamir-tiwari-sumo/maya/pkg/version"
 	analytics "github.com/openebs/google-analytics-4/usage"
-	menv "github.com/openebs/maya/pkg/env/v1alpha1"
-	mKube "github.com/openebs/maya/pkg/kubernetes/client/v1alpha1"
-	"github.com/openebs/maya/pkg/util"
-	"github.com/openebs/maya/pkg/version"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"k8s.io/klog/v2"
-	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v9/controller"
+	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v10/controller"
 )
 
 var (
@@ -77,6 +77,7 @@ func Start(cmd *cobra.Command) error {
 	// that has the reconciliation loops for PVC create and delete
 	// events and invokes the Provisioner Handler.
 	pc := pvController.NewProvisionController(
+		klog.Background(),
 		kubeClient,
 		provisionerName,
 		provisioner,

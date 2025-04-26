@@ -23,9 +23,9 @@ import (
 	"context"
 	"time"
 
-	blockdevice "github.com/openebs/maya/pkg/blockdevice/v1alpha2"
-	blockdeviceclaim "github.com/openebs/maya/pkg/blockdeviceclaim/v1alpha1"
-	"github.com/openebs/maya/pkg/util"
+	blockdevice "github.com/aamir-tiwari-sumo/maya/pkg/blockdevice/v1alpha2"
+	blockdeviceclaim "github.com/aamir-tiwari-sumo/maya/pkg/blockdeviceclaim/v1alpha1"
+	"github.com/aamir-tiwari-sumo/maya/pkg/util"
 	errors "github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

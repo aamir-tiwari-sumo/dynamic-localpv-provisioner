@@ -20,16 +20,16 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/aamir-tiwari-sumo/maya/pkg/alertlog"
+	mconfig "github.com/aamir-tiwari-sumo/maya/pkg/apis/openebs.io/v1alpha1"
+	menv "github.com/aamir-tiwari-sumo/maya/pkg/env/v1alpha1"
 	analytics "github.com/openebs/google-analytics-4/usage"
-	"github.com/openebs/maya/pkg/alertlog"
-	mconfig "github.com/openebs/maya/pkg/apis/openebs.io/v1alpha1"
-	menv "github.com/openebs/maya/pkg/env/v1alpha1"
 	"github.com/pkg/errors"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
-	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v9/controller"
+	pvController "sigs.k8s.io/sig-storage-lib-external-provisioner/v10/controller"
 )
 
 const (
