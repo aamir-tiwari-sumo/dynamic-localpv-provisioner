@@ -12,17 +12,18 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 #
-FROM alpine:3.12
+FROM alpine:3.20.1
 
-RUN apk add --no-cache \
-    iproute2 \
-    bash \
-    curl \
-    net-tools \
-    mii-tool \
-    procps \
-    libc6-compat \
-    ca-certificates
+RUN apk update && apk upgrade && \
+    apk add --no-cache \
+        iproute2 \
+        bash \
+        curl \
+        net-tools \
+        mii-tool \
+        procps \
+        libc6-compat \
+        ca-certificates
 
 COPY provisioner-localpv /
 

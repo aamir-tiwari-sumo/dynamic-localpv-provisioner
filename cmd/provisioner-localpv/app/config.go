@@ -500,14 +500,10 @@ func listConfigToMap(pvConfig []mconfig.Config) (map[string]interface{}, error) 
 	m := map[string]interface{}{}
 
 	for _, configObj := range pvConfig {
-		//No List Parameter
-		if len(configObj.List) == 0 {
-			continue
-		}
 
 		configName := strings.TrimSpace(configObj.Name)
 		confHierarchy := map[string]interface{}{
-			configName: configObj.List,
+			configName: configName,
 		}
 		isMerged := util.MergeMapOfObjects(m, confHierarchy)
 		if !isMerged {

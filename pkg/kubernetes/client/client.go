@@ -210,7 +210,9 @@ func withDefaultGetKubeClientsetFn() OptionFn {
 func withDefaultGetKubeDynamicClientFn() OptionFn {
 	return func(c *Client) {
 		if c.getKubeDynamicClient == nil {
-			c.getKubeDynamicClient = dynamic.NewForConfig
+			c.getKubeDynamicClient = func(c *rest.Config) (dynamic.Interface, error) {
+				return dynamic.NewForConfig(c)
+			}
 		}
 	}
 }
