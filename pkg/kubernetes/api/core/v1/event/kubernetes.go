@@ -19,7 +19,7 @@ package event
 import (
 	"context"
 
-	client "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/client"
+	client "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/client"
 	errors "github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

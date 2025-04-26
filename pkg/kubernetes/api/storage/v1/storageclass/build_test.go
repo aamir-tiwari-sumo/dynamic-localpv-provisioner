@@ -19,7 +19,7 @@ package storageclass
 import (
 	"testing"
 
-	mconfig "github.com/openebs/maya/pkg/apis/openebs.io/v1alpha1"
+	mconfig "github.com/aamir-tiwari-sumo/maya/pkg/apis/openebs.io/v1alpha1"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	storagev1 "k8s.io/api/storage/v1"

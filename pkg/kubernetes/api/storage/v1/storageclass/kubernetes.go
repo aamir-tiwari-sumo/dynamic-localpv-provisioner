@@ -24,7 +24,7 @@ import (
 	storagev1 "k8s.io/api/storage/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/client"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/client"
 	"k8s.io/client-go/kubernetes"
 )
 

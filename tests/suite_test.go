@@ -25,13 +25,13 @@ import (
 	. "github.com/onsi/gomega"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	ns "github.com/openebs/maya/pkg/kubernetes/namespace/v1alpha1"
+	ns "github.com/aamir-tiwari-sumo/maya/pkg/kubernetes/namespace/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 
 	// auth plugins
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 
-	"github.com/openebs/dynamic-localpv-provisioner/tests/disk"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/tests/disk"
 )
 
 const (

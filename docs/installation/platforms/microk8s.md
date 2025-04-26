@@ -60,4 +60,4 @@ $ microk8s kubectl get pods -n openebs
 $ microk8s kubectl get storageclass
 ```
 
-For instructions on using the StorageClasses and creating volumes, refer to the [quickstart](https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).
+For instructions on using the StorageClasses and creating volumes, refer to the [quickstart](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/docs/quickstart.md).

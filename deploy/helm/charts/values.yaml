@@ -107,7 +107,7 @@ deviceClass:
   # Provisioner to pick up those specific block devices available on the node.
   # Set the label key and value as shown in the example below.
   #
-  # To read more: https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/docs/tutorials/device/blockdeviceselectors.md
+  # To read more: https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/docs/tutorials/device/blockdeviceselectors.md
   #
   # Example:
   #          blockDeviceSelectors:

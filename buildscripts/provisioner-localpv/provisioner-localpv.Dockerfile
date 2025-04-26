@@ -30,7 +30,7 @@ ENV GO111MODULE=on \
   BRANCH=${BRANCH} \
   RELEASE_TAG=${RELEASE_TAG}
 
-WORKDIR /go/src/github.com/openebs/dynamic-localpv-provisioner/
+WORKDIR /go/src/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/
 
 RUN apt-get update && apt-get install -y make git
 
@@ -62,6 +62,6 @@ RUN apk add --no-cache \
     procps \
     ca-certificates
 
-COPY --from=build /go/src/github.com/openebs/dynamic-localpv-provisioner/bin/provisioner-localpv/provisioner-localpv /usr/local/bin/provisioner-localpv
+COPY --from=build /go/src/github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/bin/provisioner-localpv/provisioner-localpv /usr/local/bin/provisioner-localpv
 
 ENTRYPOINT ["/usr/local/bin/provisioner-localpv"]

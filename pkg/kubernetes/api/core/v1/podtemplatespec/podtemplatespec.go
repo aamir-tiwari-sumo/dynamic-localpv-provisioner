@@ -15,8 +15,8 @@
 package podtemplatespec
 
 import (
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
-	"github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/container"
+	"github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/volume"
 	errors "github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 )

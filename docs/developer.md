@@ -17,7 +17,7 @@
 
 ### Fork in the cloud
 
-1. Visit https://github.com/openebs/dynamic-localpv-provisioner.
+1. Visit https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner.
 2. Click `Fork` button (top right) to establish a cloud-based fork.
 
 ### Clone fork to local host
@@ -35,7 +35,7 @@ git clone https://github.com/$user/dynamic-localpv-provisioner
 
 # Configure remote upstream
 cd path/to/directory/dynamic-localpv-provisioner_fork
-git remote add upstream https://github.com/openebs/dynamic-localpv-provisioner
+git remote add upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner
 
 # Never push to upstream develop
 git remote set-url --push upstream no_push
@@ -73,14 +73,14 @@ $ cd path/to/directory/dynamic-localpv-provisioner_fork
  $ git remote -v
  origin	git@github.com:$user/dynamic-localpv-provisioner (fetch)
  origin	git@github.com:$user/dynamic-localpv-provisioner (push)
- upstream	https://github.com/openebs/dynamic-localpv-provisioner (fetch)
+ upstream	https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner (fetch)
  upstream	no_push (push)
  ```
 
  If the upstream is missing, add it by using below command.
 
  ```sh
- $ git remote add upstream https://github.com/openebs/dynamic-localpv-provisioner
+ $ git remote add upstream https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner
  ```
 
  Fetch all the changes from the upstream develop branch.
@@ -167,7 +167,7 @@ make provisioner-localpv-image
  make testv
 
  # Run integration tests (This requires a Kubernetes cluster)
- # Read more at https://github.com/openebs/dynamic-localpv-provisioner/blob/develop/tests/README.md
+ # Read more at https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/blob/develop/tests/README.md
  make integration-test
  ```
 
@@ -199,4 +199,4 @@ Before you raise the Pull Requests, ensure you have reviewed the checklist in th
 - Ensure that you have added the required unit tests for the bug fixes or new feature that you have introduced.
 - Ensure your commits history is clean with proper header and descriptions.
 
-Go to the [openebs/dynamic-localpv-provisioner github](https://github.com/openebs/dynamic-localpv-provisioner) and follow the Open Pull Request link to raise your PR from your development branch.
+Go to the [openebs/dynamic-localpv-provisioner github](https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner) and follow the Open Pull Request link to raise your PR from your development branch.

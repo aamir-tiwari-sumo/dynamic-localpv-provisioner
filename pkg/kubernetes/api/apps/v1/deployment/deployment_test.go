@@ -19,7 +19,7 @@ package v1alpha1
 import (
 	"testing"
 
-	pts "github.com/openebs/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
+	pts "github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner/pkg/kubernetes/api/core/v1/podtemplatespec"
 	appsv1 "k8s.io/api/apps/v1"
 )
 

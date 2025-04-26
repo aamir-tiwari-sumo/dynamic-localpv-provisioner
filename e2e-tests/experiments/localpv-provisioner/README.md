@@ -18,7 +18,7 @@ kubectl apply -f https://raw.githubusercontent.com/openebs/charts/gh-pages/<rele
 ## How to run
 
 - This experiment accepts the parameters in form of kubernetes job environmental variables.
-- For running this experiment of deploying openebs operator, clone openens/dynamic-localpv-provisioner[https://github.com/openebs/dynamic-localpv-provisioner] repo and then first apply rbac and crds for e2e-framework.
+- For running this experiment of deploying openebs operator, clone openens/dynamic-localpv-provisioner[https://github.com/aamir-tiwari-sumo/dynamic-localpv-provisioner] repo and then first apply rbac and crds for e2e-framework.
 ```
 kubectl apply -f dynamic-localpv-provisioner/e2e-tests/hack/rbac.yaml
 kubectl apply -f dynamic-localpv-provisioner/e2e-tests/hack/crds.yaml
